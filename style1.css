@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: radial-gradient(circle at top, #111 0%, #000 70%);
+    color: #e0f7ff;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(90deg, #111, #1a1a1a);
+    padding: 30px 20px 30px 140px;
+    text-align: center;
+    border-bottom: 2px solid #00bfff;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    border: 2px solid #00bfff;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    background: rgba(0,191,255,0.1);
+    box-shadow: 0 0 10px #00bfff;
+}
+
+h1 {
+    color: gold;
+    font-size: 24px;
+    margin: 0;
+}
+
+/* INTRO */
+.intro {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.intro h2 {
+    color: gold;
+    margin-bottom: 20px;
+}
+
+/* CHARACTER SECTION */
+.character-section {
+    padding: 40px 10%;
+}
+
+.character-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+    background: rgba(255,255,255,0.03);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    transition: 0.3s;
+}
+
+.character-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(0,191,255,0.3);
+}
+
+.text {
+    width: 55%;
+}
+
+.text h3 {
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.image-box {
+    width: 300px;
+    height: 300px;
+    border: 3px solid #00bfff;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-box:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 25px #00bfff;
+}
+
+.gray .image-box {
+    border-color: gray;
+}
+
+p {
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    text-align: justify;
+    max-width: 700px;
+}
+
+/* subtle dotted separator */
+.text-block p,
+.lore p {
+    border-bottom: 1px dotted rgba(0,191,255,0.3);
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+/* section titles */
+h2, h3 {
+    letter-spacing: 1px;
+}
