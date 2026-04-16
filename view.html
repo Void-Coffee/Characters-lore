@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Character</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <aside class="sidebar">
+        <a href="index.html">⬅ Back</a>
+    </aside>
+
+<main class="content">
+
+    <div id="content"></div>
+
+    <!-- 📚 CONTENTS BOX -->
+    <div id="contentsBox" class="contents-box"></div>
+
+    <!-- tutaj będą sekcje -->
+</main>
+    <aside class="infobox" id="infobox"></aside>
+
+</div>
+
+<script>
+const data = JSON.parse(localStorage.getItem("character"));
+
+const content = document.getElementById("content");
+const infobox = document.getElementById("infobox");
+
+content.innerHTML = `<h1>${data.name}</h1><p>${data.desc}</p>`;
+
+data.sections.forEach(sec => {
+    content.innerHTML += `<h2>${sec.title}</h2><p>${sec.text}</p>`;
+});
+
+infobox.innerHTML = `
+    <img src="${data.image}">
+`;
+
+data.media.forEach(m => {
+    infobox.innerHTML += `<p>${m}</p>`;
+});
+</script>
+
+<script src="view.js"></script>
+
+<div id="tabs"></div>
+<div id="tabContent"></div>
+<div id="contentsBox" class="contents-box"></div>
+
+</body>
+</html>

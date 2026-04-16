@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Wiki</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h2>My Wiki</h2>
+
+        <input type="text" placeholder="Search..." class="search">
+
+        <nav>
+            <a href="#">Main Page</a>
+            <a href="#">All Characters</a>
+            <a href="#">Popular</a>
+        </nav>
+    </aside>
+
+    <!-- CONTENT -->
+    <main class="content">
+        <h1>Welcome to My Character Wiki</h1>
+        <p>This is a fan-made wiki where users can explore and create their own characters.</p>
+
+       <h2>Characters</h2>
+
+<div class="card-grid">
+
+    <a href="editor.html" class="add-card">
+        <div class="plus">+</div>
+        <p>Add new character</p>
+    </a>
+
+</div>
+    </main>
+
+    <!-- INFOBOX / SIDE PANEL -->
+    <aside class="infobox">
+        <h3>About this wiki</h3>
+        <p>This project is inspired by Fandom but with custom design.</p>
+    </aside>
+
+</div>
+
+<div id="charactersList" class="card-grid"></div>
+
+<script src="main.js"></script>
+
+</body>
+</html>

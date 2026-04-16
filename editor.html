@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Character</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h2>Editor</h2>
+        <a href="index.html">⬅ Back</a>
+    </aside>
+
+    <!-- CONTENT -->
+    <main class="content">
+
+        <h1>Create Character</h1>
+
+        <input type="text" id="name" placeholder="Character name">
+
+        <textarea id="desc" placeholder="Main description"></textarea>
+
+        <h2>Categories (sections)</h2>
+        <div id="sections"></div>
+
+        <button onclick="addSection()">+ Add Category</button>
+
+        <br><br>
+        <button onclick="saveCharacter()">💾 Save</button>
+
+        <h2>Theme</h2>
+        <input type="color" id="mainColor">
+        <input type="color" id="accentColor">
+
+        <h2>Quote</h2>
+        <textarea id="quote" placeholder="Character quote..."></textarea>
+
+        <h2>Tabs</h2>
+        <div id="tabs"></div>
+        <button onclick="addTab()">+ Add Tab</button>
+
+        <h2>Sections</h2>
+        <div id="sections"></div>
+        <button onclick="addSection()">+ Add Section</button>
+    </main>
+
+    <!-- INFOBOX -->
+    <aside class="infobox">
+
+        <h3>Infobox</h3>
+
+        <input type="text" id="image" placeholder="Main image URL">
+
+        <h4>Info fields</h4>
+        <div id="infoboxFields"></div>
+        <button onclick="addInfo()">+ Add field</button>
+
+        <h4>Mini images (icons)</h4>
+        <div id="icons"></div>
+        <button onclick="addIcon()">+ Add icon</button>
+
+    </aside>
+
+</div>
+
+<script src="editor.js"></script>
+
+</body>
+</html>
